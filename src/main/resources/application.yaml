@@ -1,0 +1,16 @@
+server:
+  port: 9091
+management:
+  server:
+    port: 9091
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /management
+spring:
+  application:
+    name: springboot_prometheus
+logging:
+  level:
+    root: debug
